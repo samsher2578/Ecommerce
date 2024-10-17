@@ -52,7 +52,9 @@ export default function ProductList() {
       </Head>
 
       <header className="flex justify-between items-center p-4 bg-white shadow">
-        <div className="text-2xl font-bold text-gray-800">Goods Paradise</div>
+      <Link href="/" className="text-2xl font-bold text-gray-800">
+          <span className='text-red-700'>G</span>oods <span className='text-red-700'>P</span>aradise
+        </Link>
         <nav className="flex space-x-4">
           <Link href="/about-us" className="text-gray-800 hover:underline">About Us</Link>
           <Link href="/contact-us" className="text-gray-800 hover:underline">Contact Us</Link>
