@@ -37,7 +37,7 @@ export default function ProductList() {
     document.documentElement.setAttribute('data-theme', storedTheme);
   }, []);
 
-    
+
 
   return (
     <>
@@ -50,13 +50,16 @@ export default function ProductList() {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/icon-512x512.jpg" />
       </Head>
-      
+
       <header className="flex justify-between items-center p-4 bg-white shadow">
-        <div className="text-2xl font-bold text-gray-800">SK</div>
+        <div className="text-2xl font-bold text-gray-800">Goods Paradise</div>
         <nav className="flex space-x-4">
-          
+          <Link href="/about-us" className="text-gray-800 hover:underline">About Us</Link>
+          <Link href="/contact-us" className="text-gray-800 hover:underline">Contact Us</Link>
+          <Link href="/affiliate-disclosure" className="text-gray-800 hover:underline">Affiliate Disclosure</Link>
         </nav>
       </header>
+
 
       <main className="min-h-screen flex flex-col bg-gradient-to-r from-purple-500 to-indigo-600">
         <section className="p-4 mt-4">
